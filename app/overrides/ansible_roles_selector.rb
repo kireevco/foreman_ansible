@@ -1,3 +1,5 @@
+# Roles are irrelevant if the playbook generated cannot be
+# executed via ForemanRemoteExecution
 if defined?(ForemanRemoteExecution)
   Deface::Override.new(:virtual_path => 'hosts/_form',
                        :name => 'add_ansible_roles_tab_to_host',
