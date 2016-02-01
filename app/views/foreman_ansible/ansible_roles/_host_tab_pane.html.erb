@@ -1,0 +1,10 @@
+<div class='tab-pane' id='ansible_roles'>
+  <div class='row'>
+    <% roles_receiver = @host || @hostgroup %>
+    <%= multiple_selects f,
+      :ansible_roles,
+      ansible_roles,
+      roles_receiver.ansible_roles.map(&:id),
+      :label => _('Roles')  %>
+  </div>
+</div>

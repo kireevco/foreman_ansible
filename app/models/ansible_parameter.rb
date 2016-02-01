@@ -1,0 +1,2 @@
+class AnsibleParameter < LookupKey
+end
